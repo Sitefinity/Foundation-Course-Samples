@@ -1,0 +1,223 @@
+﻿/*OTHER PAGES STYLES*/
+.media-left{
+    float:left;
+}
+
+.thumbnail{
+    border: none;
+    position: relative;
+    padding:0;
+}
+
+.comments_header{
+    padding-top: 5%;
+}
+
+.expand{
+  margin-bottom: 2%;
+}
+
+.expand a{
+  text-transform: uppercase;
+  color: $quantum-main;
+  font-weight: 700;
+}
+
+.faq{
+  padding: 2%;
+}
+
+.login_reg{
+    padding: 3%;
+}
+
+
+.loginn a:hover{
+ cursor: pointer;
+}
+
+.subscribe{
+  margin-top: 2%;
+}
+
+.location_details{
+    margin: 1%;
+    padding: 1%;
+}
+
+.location_item{
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid $color-gray;
+    background-color: white;
+}
+
+.location_item div{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.highlights li{
+    padding: 0;
+    padding-right: 20px;
+    @media (max-width: 775px) {
+        width: 100%;
+    }       
+}
+
+.highlights ul{
+    list-style: none;
+    padding:0;
+}
+
+.highlights h3{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.highlights h3 a{
+    color: white!important;
+}
+
+.highlights a, .highlights p{
+    color: #333!important;
+}
+
+.highlights p{
+    color: #333!important;
+    font-size: 15px;
+    padding: 0px;
+    padding-right: 30px;
+}
+
+.highlights img{
+    min-height: 55px;
+}
+
+#map{
+    height: 1280px;
+}
+
+.promo {
+  color: $quantum-main;
+  border: 3px solid $quantum-main;
+  padding: 2%; 
+}
+
+.searchbox_q{
+    width:100%!important;
+}
+
+.sf-FormNav-page{
+    margin: 5px;
+}
+
+.locations-container{
+    margin-top: -850px;
+    margin-bottom: 24px;
+}
+
+.locations-container h1{
+    position: relative;
+    color: black;
+    letter-spacing: -3px;
+    margin-bottom: 40px;
+}
+
+.locations-holder{
+    min-height: 600px;
+    background: white;
+    border-radius: 8px;
+    border: none;
+    margin-right: 0;
+    margin-bottom: 70px;
+}
+
+.locations-holder img{
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.locations-holder-info{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.locations-holder-info span{
+    margin-top: 20px;
+}
+
+.locations-holder-info h3{
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.locations-holder-info a{
+    color: $quantum-main;
+}
+
+.single-location-container{
+    margin-bottom: 20px;
+}
+
+.single-location-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.request_a_quote{
+    background-image: url(../../dist/images/Development_ContactUs.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.write_to_us{
+    background-image: url(../../dist/images/Writetous.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.form_left_message{
+    padding-right: 30%;
+    padding-top: 10%;
+}
+
+.gray_form_container{
+    background: #F3F4F6;
+    opacity: 0.9;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 20px 20px 20px;
+    margin: 70px 0 70px 0;
+}
+
+.gray_form_container label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.gray_form_container .form-group{
+    margin-bottom: 0;
+}
+
+.submit-form-button button{
+    background: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.submit-form-button button:hover{
+    background: black;
+    color: white;
+    opacity: 0.8;
+}
+/*OTHER PAGES STYLES END*/

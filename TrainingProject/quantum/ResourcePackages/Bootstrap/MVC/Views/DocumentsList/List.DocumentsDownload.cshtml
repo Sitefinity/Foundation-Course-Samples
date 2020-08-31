@@ -1,0 +1,48 @@
+@model Telerik.Sitefinity.Frontend.Media.Mvc.Models.DocumentsList.DocumentsListViewModel
+
+@using System;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Frontend.Media.Mvc.Models.DocumentsList;
+
+<div class="@Model.CssClass">
+    <div class="row download_list">
+        <div class="">
+            <ul class="list-unstyled">
+                @foreach (var item in Model.Items)
+                {                
+             <li class="col-md-3" @Html.InlineEditingAttributes(Model.ProviderName, Model.ContentType.FullName, (Guid)item.Fields.Id)>
+                 <div class="download_item">
+                     <div class="download_item_image">
+                         <img src="@item.Fields.Image.Fields.MediaUrl">
+                     </div>
+                     <div class="">
+                         <h3>
+                             <a class="sf-title" href="@item.Fields.MediaUrl" target="_blank">
+                                 @item.Fields.Title
+                             </a>
+                         </h3>
+                         <p>
+                             <a class="btn btn-primary btn-quantum-homepage btn-q-download" href="@item.Fields.MediaUrl" target="_blank">Download</a>
+                         </p>
+                         <p class="download_file_size">
+                             <span class="icon-txt-@(((DocumentItemViewModel)item).Extension)">@(((DocumentItemViewModel)item).Extension)</span>
+                             <span>(@(Math.Ceiling((double)item.Fields.TotalSize / 1024) + " KB"))</span>
+                         </p>
+                     </div>
+                 </div>                       
+                </li>
+                }
+            </ul>
+
+            @if (Model.ShowPager)
+            {
+                @Html.Action("Index", "ContentPager", new
+           {
+               currentPage = Model.CurrentPage,
+               totalPagesCount = Model.TotalPagesCount.Value,
+               redirectUrlTemplate = ViewBag.RedirectPageUrlTemplate
+           })
+            }
+        </div>
+    </div>
+</div>

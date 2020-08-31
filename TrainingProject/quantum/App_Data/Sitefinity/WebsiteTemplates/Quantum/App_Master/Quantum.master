@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+    <form id="form1" runat="server">
+        <sf:ResourceLinks ID="resourcesLinks" UseEmbeddedThemes="false"  runat="server" DisableCompression="false">
+            <sf:ResourceFile JavaScriptLibrary="JQuery"></sf:ResourceFile>
+            <sf:ResourceFile Name="SitefinityWebApp.App_Data.Sitefinity.WebsiteTemplates.Quantum.App_Themes.Quantum.Scripts.quantum.js" 
+                AssemblyInfo="SitefinityWebApp.AzureWebRole" />
+        </sf:ResourceLinks>
+        <div id="wrapper">
+            <header>
+                <asp:contentplaceholder id="headerPlaceholder" runat="server"/>
+            </header>
+            <main>
+	            <asp:contentplaceholder id="contentPlaceholder" runat="server"/>
+            </main>
+	        <footer>
+	            <asp:contentplaceholder id="footerPlaceholder" runat="server" />
+	        </footer>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $("#toggle").on("click", function () {
+                    $('body').toggleClass("navigation");
+                })
+
+                $(".browse-products").on("click", function () {
+                    $('body').toggleClass("products");
+                })
+
+                $(".sffilterTitle").on("click", function () {
+                    $('body').toggleClass("filters");
+                })
+            })
+    </script>
+   </form>
+</body>
+</html>

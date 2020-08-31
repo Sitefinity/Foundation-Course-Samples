@@ -1,0 +1,59 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using SitefinityWebApp.Mvc.Models;
+@using Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Models;
+@using Telerik.Sitefinity.Mvc;
+
+@{
+    var controller = ((Telerik.Sitefinity.Mvc.Proxy.MvcProxyBase)Model).GetController();
+}
+<server-data default-provider-name='@Html.DefaultProviderName(Telerik.Sitefinity.DynamicModules.DynamicModuleManager.GetManager(), $"{OfficeModel.OFFICE_MODULE_NAME}")' item-type="Telerik.Sitefinity.DynamicTypes.Model.Meettheteam.Office" parent-types="[]">
+</server-data>
+
+<uib-tabset class="nav-tabs-wrapper">
+    <uib-tab heading="1. Select Data Source">
+        <label>Select data source for offices</label>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <sf-provider-selector sf-manager-type='@OfficeModel.OFFICE_MODULE_NAME'
+                                          sf-provider-label='Data Source'
+                                          ng-model="properties.ProviderName.PropertyValue">
+                    </sf-provider-selector>
+                </div>
+            </div>
+        </div>
+    </uib-tab>
+    <uib-tab heading="2. Select Offices">
+        <label>Select offices</label>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <sf-list-selector sf-dynamic-items-selector
+                                      sf-multiselect="true" sf-sortable="true" sf-master="true"
+                                      sf-provider="properties.ProviderName.PropertyValue"
+                                      sf-selected-items="officeSelector.selectedItems"
+                                      sf-selected-ids="officeSelector.selectedItemsIds"
+                                      sf-item-type="properties.OfficeType.PropertyValue"
+                                      sf-identifier-field="Title"
+                                      sf-title="Offices"></sf-list-selector>
+                </div>
+            </div>
+        </div>
+    </uib-tab>
+    <uib-tab heading="3. Select Template">
+        <div class="form-group">
+            <label for="templateName">Select a template</label>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <select id="templateName" ng-model="properties.TemplateName.PropertyValue" class="form-control">
+                        @foreach (var viewName in Html.GetViewNames(controller, "(?<viewName>^(?!DesignerView.).+)$"))
+                        {
+                            <option value="@viewName"> @viewName.SplitCamelCase()</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+    </uib-tab>
+</uib-tabset>

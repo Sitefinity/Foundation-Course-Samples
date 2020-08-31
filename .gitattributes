@@ -1,0 +1,6 @@
+TrainingProjectDB/database.bacpac filter=lfs diff=lfs merge=lfs -text
+TrainingProject/quantum/App_Data/Sitefinity/Search/advanced-settings-search/* filter=lfs diff=lfs merge=lfs -text
+TrainingProject/quantum/App_Data/Sitefinity/Search/search-index/*.* filter=lfs diff=lfs merge=lfs -text
+TrainingProject/quantum/App_Data/GeoLocation/GeoLite2-City.mmdb filter=lfs diff=lfs merge=lfs -text
+TrainingProject/quantum/App_Data/Sitefinity/Search/advanced-settings-search/_2k.fdt filter=lfs diff=lfs merge=lfs -text
+TrainingProject/quantum/App_Data/RadCaptcha/*.wav filter=lfs diff=lfs merge=lfs -text

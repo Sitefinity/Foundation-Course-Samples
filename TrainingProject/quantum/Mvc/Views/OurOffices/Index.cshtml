@@ -1,0 +1,20 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+@model  List<SitefinityWebApp.Mvc.ViewModels.OfficeViewModel>
+
+    <div>
+        @using (Html.BeginForm("CreateOffice", "OurOffices"))
+        {
+            <button type="submit" class="btn btn-primary">Create Office</button>
+        }
+        <ul class="list-unstyled row news-list-page">
+            @foreach (var office in Model)
+            {
+                <li class="col-md-4">
+                    <h2>@office.Title</h2>
+                    <img src="@office.Picture.ImageUrl" alt="@office.Picture.AltText" class="mb-3" />
+                    <p>@Html.HtmlSanitize(office.Info)</p>
+                </li>
+            }
+        </ul>
+    </div>

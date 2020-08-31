@@ -1,0 +1,12 @@
+﻿@model SitefinityWebApp.Mvc.Models.FlatTaxonomyModel
+
+<ul class="nav nav-pills" role="tablist">
+    @foreach (var taxonomy in Model.Taxonomies)
+    {
+        <li role="presentation">
+            <a href="#">
+                @taxonomy.Name <span class="badge">@taxonomy.TaxaCount</span>
+            </a>
+        </li>
+    }
+</ul>

@@ -1,0 +1,15 @@
+﻿@model List<Telerik.Sitefinity.News.Model.NewsItem>
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div>
+    <ul class="list-unstyled row news-list-page">
+        @foreach (var item in Model)
+        {
+            <li class="col-md-4">
+                <h2>@item.Title</h2>
+                <span class="text-muter">@item.PublicationDate.ToLongDateString()</span>
+                <p>@Html.HtmlSanitize(item.Summary)</p>
+            </li>
+        }
+    </ul>
+</div>
