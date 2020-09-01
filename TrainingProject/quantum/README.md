@@ -36,15 +36,14 @@ See a complete list of the system requirements for the solution here: http://doc
 
 ### **Prerequisites**
 
-You need to attach the database backup files to your SQL Server. To do this:
+You need to import the database backup files to your SQL Server. To do this:
 
-1. Download the database backup file from: [here](https://sitefinitystore.blob.core.windows.net/files/Telerik.Sitefinity.Samples.Quantum/QuantumDB_v_13073230.zip)
-2. Navigate to the _SitefinityWebApp_ -&gt; _App\_Data_ folder.
-3. Unzip the  **QuantumDB_version.zip**  file.
-4. In SQL Management Studio, open the context menu of _Databases_ and click _Attach..._
-5. Click the _Add..._ button and navigate to the folder where you unzipped the  **QuantumDB_version.zip**  file.
-6. Select the  **Sitefinity.mdf**  file and click _OK_.
-7. Click _OK_.
+1. Download the database backup file from: [here](https://github.com/Sitefinity/Foundation-Course-Samples/raw/master/TrainingProjectDB/database.bacpac)
+2. In SQL Management Studio, open the context menu of _Databases_ and click _Import Data-tier application_
+3. Click Next
+4. Locate the downloaded .bacpac file by clicking Browse in the _Import from local disk_ option
+5. Select the  **Sitefinity.mdf**  file and click _OK_.
+6. Click _Next_ and then _Finish_.
 
 ### **Nuget package restoration**
 
