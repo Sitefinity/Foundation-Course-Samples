@@ -1,0 +1,17 @@
+.user-picker__wrapper *{
+    transition: all linear 0.2s;
+}
+
+.user-picker__wrapper .inner{
+    padding:15px;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.user-picker__wrapper p{
+    margin:0 20px;
+    width:50%;
+    text-align: left;
+}

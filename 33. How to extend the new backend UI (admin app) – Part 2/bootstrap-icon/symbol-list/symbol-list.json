@@ -1,0 +1,218 @@
+[  
+  {
+    "value": "bi-arrow-90deg-right",
+    "tooltip": "Arrow 90deg Right"   
+  },
+  {
+    "value": "bi-arrow-left",
+    "tooltip": "Arrow Left"    
+  },
+  {
+    "value": "bi-arrow-left-circle",
+    "tooltip": "Arrow Left Circle"    
+  },
+  {
+    "value": "bi-arrow-right",
+    "tooltip": "Arrow Right"    
+  }, 
+  {
+    "value": "bi-arrow-right-circle",
+    "tooltip": "Arrow Right Circle"    
+  },
+  {
+    "value": "bi-asterisk",
+    "tooltip": "Asterisk"    
+  },
+  {
+    "value": "bi-bank",
+    "tooltip": "Bank"    
+  },
+  {
+    "value": "bi-bank2",
+    "tooltip": "Bank 2"    
+  },
+  {
+    "value": "bi-bar-chart",
+    "tooltip": "Bar Chart"    
+  },
+  {
+    "value": "bi-bell",
+    "tooltip": "Bell"    
+  },
+  {
+    "value": "bi-book",
+    "tooltip": "Book"    
+  },
+  {
+    "value": "bi-bookmark",
+    "tooltip": "Bookmark"    
+  },
+  {
+    "value": "bi-calculator",
+    "tooltip": "Calculator"    
+  },
+  {
+    "value": "bi-calendar",
+    "tooltip": "Calendar"    
+  },
+  {
+    "value": "bi-calendar2",
+    "tooltip": "Calendar 2"    
+  },
+  {
+    "value": "bi-calendar2-check",
+    "tooltip": "Calendar 2 Check"    
+  },
+  {
+    "value": "bi-calendar3",
+    "tooltip": "Calendar 3"    
+  },
+  {
+    "value": "bi-camera",
+    "tooltip": "Camera"    
+  },
+  {
+    "value": "bi-camera-video",
+    "tooltip": "Camera Video"    
+  },
+  {
+    "value": "bi-card-checklist",
+    "tooltip": "Card Checklist"    
+  },
+  {
+    "value": "bi-caret-down",
+    "tooltip": "Caret Down"    
+  },
+  {
+    "value": "bi-caret-down-fill",
+    "tooltip": "Caret Down Fill"    
+  },
+  {
+    "value": "bi-caret-left",
+    "tooltip": "Caret Left"    
+  },
+  {
+    "value": "bi-caret-left-fill",
+    "tooltip": "Caret Left Fill"    
+  },
+  {
+    "value": "bi-caret-right",
+    "tooltip": "Caret Right"    
+  },
+  {
+    "value": "bi-caret-right-fill",
+    "tooltip": "Caret Right Fill"    
+  },
+  {
+    "value": "bi-caret-up",
+    "tooltip": "Caret Up"    
+  },
+  {
+    "value": "bi-caret-up-fill",
+    "tooltip": "Caret Up Fill"    
+  },
+  {
+    "value": "bi-check",
+    "tooltip": "Check"    
+  },
+  {
+    "value": "bi-check-lg",
+    "tooltip": "Check Large"    
+  },
+  {
+    "value": "bi-check2",
+    "tooltip": "Check 2"    
+  },
+  {
+    "value": "bi-chevron-double-right",
+    "tooltip": "Chevron Double Right"    
+  },
+  {
+    "value": "bi-cloud-arrow-down",
+    "tooltip": "Cloud Arrow Down"    
+  },
+  {
+    "value": "bi-code-slash",
+    "tooltip": "Code Slash"    
+  },
+  {
+    "value": "bi-download",
+    "tooltip": "Download"    
+  },
+  {
+    "value": "bi-envelope",
+    "tooltip": "Envelope"    
+  },
+  {
+    "value": "bi-exclamation",
+    "tooltip": "Exclamation"    
+  },
+  {
+    "value": "bi-exclamation-lg",
+    "tooltip": "Exclamation Large"    
+  },
+  {
+    "value": "bi-exclamation-triangle",
+    "tooltip": "Exclamation Triangle"    
+  },
+  {
+    "value": "bi-facebook",
+    "tooltip": "Facebook"    
+  },
+  {
+    "value": "bi-flag",
+    "tooltip": "Flag"    
+  },
+  {
+    "value": "bi-info-square",
+    "tooltip": "Info Square"    
+  },
+  {
+    "value": "bi-link",
+    "tooltip": "Link"    
+  },
+  {
+    "value": "bi-megaphone",
+    "tooltip": "Megaphone"    
+  },
+  {
+    "value": "bi-printer",
+    "tooltip": "Printer"    
+  },
+  {
+    "value": "bi-question",
+    "tooltip": "Question"    
+  },
+  {
+    "value": "bi-question-lg",
+    "tooltip": "Question Large"    
+  },
+  {
+    "value": "bi-star",
+    "tooltip": "Star"    
+  },
+  {
+    "value": "bi-star-fill",
+    "tooltip": "Star Fill"    
+  },
+  {
+    "value": "bi-telephone",
+    "tooltip": "Telephone"    
+  },
+  {
+    "value": "bi-twitter",
+    "tooltip": "Twitter"    
+  },
+  {
+    "value": "bi-umbrella",
+    "tooltip": "Umbrella"    
+  },
+  {
+    "value": "bi-x",
+    "tooltip": "X"    
+  },
+  {
+    "value": "bi-youtube",
+    "tooltip": "YouTube"    
+  }
+]

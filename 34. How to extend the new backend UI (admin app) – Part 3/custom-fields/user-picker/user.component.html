@@ -1,0 +1,14 @@
+<div class='user-wrapper'>
+    <div class='sf-form -medium -sf-centered-box'>
+        <h1 class="-sf-mt-m -sf-mb-m">Select a user</h1>
+        <ul>
+            <li *ngFor='let user of users'
+                (click)="changeSelection(user)"
+                [ngClass]="{ 'active': user.Selected }">
+                <p [innerHtml]="user.Name"></p>
+                <p [innerHtml]="user.Email"></p>
+            </li>
+        </ul>
+    </div>
+</div>
+

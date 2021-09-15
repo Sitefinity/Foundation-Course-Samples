@@ -1,0 +1,20 @@
+<div class="user-picker__wrapper -sf-mt-m">
+        <div    *ngIf="user" 
+                class="inner -sf-mb-m">
+                <p [innerHtml]="user.Name"></p>
+                <p [innerHtml]="user.Email"></p>
+        </div>
+        <button type="button" 
+                class="sf-button -circle -small -icon ng-star-inserted" 
+                title="Pick User"
+                (click)="openDialog()">
+                <i class="sf-button__icon sf-icon sf-fa sf-fa-plus -size-xs ng-star-inserted"></i>
+        </button>
+        <button *ngIf="user"
+                type="button" 
+                class="sf-button -circle -small -icon ng-star-inserted" 
+                title="Remove User"
+                (click)="clearUser()">
+                <i class="sf-button__icon sf-icon sf-fa sf-fa-close -size-xs ng-star-inserted"></i>
+        </button>
+</div>
