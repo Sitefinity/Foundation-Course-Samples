@@ -1,0 +1,14 @@
+﻿@model List<Renderer.ViewModels.Office.OfficeViewModel>
+
+<div>
+    <ul class="list-unstyled row news-list-page">
+        @foreach ( var office in Model )
+        {
+            <li class="col-md-4">
+                <h2>@office.Title</h2>
+                <img src="@office.ImageUrl" alt="@office.AltText" class="mb-3" />
+                <p>@Html.Raw( office.Info )</p>
+            </li>
+        }
+    </ul>
+</div>

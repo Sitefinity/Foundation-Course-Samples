@@ -1,9 +1,0 @@
-﻿{
-  "priority": 1,
-  "hidden": false,
-  "components": [
-    "sf-provider-selector",
-    "sf-dynamic-items-selector"
-  ],
-  "scripts": []
-}

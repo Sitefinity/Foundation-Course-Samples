@@ -1,0 +1,25 @@
+﻿@using Renderer.ViewModels.Card;
+
+
+@model CardViewModel;
+
+<div class="card @Model.SectionCss">
+    <div class="row g-0">
+        <div class="col-md-4">
+            @if (Model.Image != null)
+            {
+                <img src="@Model.Image.Url" alt="@Model.Image.AlternativeText" class="img-fluid rounded-start" />
+            }
+        </div>
+        <div class="col-md-8">
+            <div class="card-body text-@Model.TextAlign">
+                <h5 class="card-title">@Model.CardTitle</h5>
+                <p class="card-text">@Model.CardText</p>
+                @if (!string.IsNullOrEmpty(Model.ButtonUrl))
+                {
+                    <a href="@Model.ButtonUrl" class="btn btn-@Model.ButtonStyle">@Model.ButtonText</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
